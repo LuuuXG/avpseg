@@ -1,0 +1,13 @@
+{
+    "channel_names": {
+        "0": "T1w"
+    },
+    "labels": {
+        "background": 0,
+        "AVP": 1
+    },
+    "numTraining": 60,
+    "file_ending": ".nii.gz",
+    "name": "AVP_seg_v2",
+    "description": "Formal AVP segmentation v2: v1 conservative VOIs plus TI contrast-domain manual labels."
+}

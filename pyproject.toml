@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=66.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avpseg"
+version = "1.0.0"
+description = "Anterior visual pathway segmentation and optic nerve morphometry pipeline"
+readme = "README.md"
+requires-python = ">=3.9"
+dynamic = ["dependencies"]
+
+[project.scripts]
+avp_seg = "avpseg.pipeline:main"
+avp_seg_doctor = "avpseg.doctor:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["avpseg*"]

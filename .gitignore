@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Model weights and outputs
+models/**/*.pth
+avp_seg_output/
+outputs/
+tmp/
+*.log
+
+# Private manuscript drafts
+/docs/paper/
